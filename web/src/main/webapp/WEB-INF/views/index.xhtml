@@ -4,16 +4,18 @@
 <html  xmlns="http://www.w3.org/1999/xhtml"
        xmlns:h="http://java.sun.com/jsf/html"
        xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core">
-
+      xmlns:f="http://java.sun.com/jsf/core" >
+    <head>
+        <meta charset="UTF-8" content="text/html"/>
+    </head>
     <h:outputLabel value="Module 12 Info"></h:outputLabel>
     <f:view>
+
         <ui:repeat value="#{module12Controller.moduleInfo.itemDescriptions}" var="descr">
             <br/>
             <h:outputText value="#{descr}"/>
         </ui:repeat>
 
-        <h:outputLink value="#{module12Controller.moduleInfo}">Click</h:outputLink>
     </f:view>
 
 </html>

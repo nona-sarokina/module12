@@ -6,6 +6,8 @@ import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.Properties;
 
 /**
@@ -21,8 +23,12 @@ public class Module12DataFiller {
     public void fill () {
         Properties properties = new Properties();
         try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(MODULE12_PROPERTIES)) {
-            properties.load(inputStream);
-
+            Reader reader = new InputStreamReader(inputStream, "UTF-8");
+            try {
+                properties.load(reader);
+            } finally {
+                reader.close();
+            }
             int count = Integer.valueOf(String.valueOf(properties.get(COUNT)));
             for (int i = 1; i <= count; i++) {
                 data.addItem(properties.getProperty(TASK_PREFIX + i));
