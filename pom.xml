@@ -111,8 +111,8 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <!--<ignorePackaging>true</ignorePackaging>-->
-                    <!--<warFile>${project.basedir}/target/${project.artifactId}-${project.version}.war</warFile>-->
+                    <ignorePackaging>true</ignorePackaging>
+                    <warFile>${project.basedir}/target/${project.artifactId}-${project.version}.war</warFile>
                     <server>module11Server</server>
                     <path>/module12</path>
                     <update>true</update>
