@@ -1,13 +1,14 @@
 ==deploy==
-package -P module12_without_optional tomcat:deploy
-package -P module12_with_optional tomcat:redeploy
+#plugin executes on install
+install -P module12_with_optional
+install -P module12_without_optional
 
 ==profiles==
 -Pmodule12_with_optional clean package
 -Pmodule12_without_optional package
 
 ==reporting==
-clean site
+clean site - report will be built for service module
 
 ==archetype generation===
 archetype:create-from-project from the root folder
