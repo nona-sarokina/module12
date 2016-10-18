@@ -16,9 +16,9 @@ import java.util.Properties;
  */
 
 public class Module12DataFillerTest extends TestCase {
-    public void testName() {
+    public void testFill() {
         Module12DataFiller filler = new Module12DataFiller();
         filler.fill();
-        assertEquals(8, filler.getData().getItemDescriptions().size());
+        assertEquals(9, filler.getData().getItemDescriptions().size());
     }
 }

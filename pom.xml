@@ -90,12 +90,12 @@
                                     <targetPath>WEB-INF/classes</targetPath>
                                 </resource>
                                 <resource>
-                                    <directory>web/target/classes</directory>
+                                    <directory>web_module/target/classes</directory>
                                     <targetPath>WEB-INF/classes</targetPath>
                                 </resource>
 
                                 <resource>
-                                    <directory>web/src/main/webapp/WEB-INF</directory>
+                                    <directory>web_module/src/main/webapp/WEB-INF</directory>
                                     <targetPath>WEB-INF</targetPath>
                                 </resource>
                             </webResources>
