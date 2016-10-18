@@ -15,6 +15,12 @@
         <option value="$PROJECT_DIR$/web/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/module12/pom.xml" />
+        <option value="$PROJECT_DIR$/module12arch/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
